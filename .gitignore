@@ -12,6 +12,10 @@ build/
 .vscode/
 node_modules/
 *.log
+.DS_Store
+
+# DB
+dump/*
 
 # Frontend specific
 frontend/node_modules

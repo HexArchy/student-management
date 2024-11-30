@@ -203,7 +203,6 @@ class PostgresStudentRepository(StudentRepository):
         if conditions:
             stmt = stmt.where(and_(*conditions))
 
-        # Добавляем сортировку
         stmt = stmt.order_by(
             StudentModel.last_name, StudentModel.first_name, StudentModel.middle_name
         )
